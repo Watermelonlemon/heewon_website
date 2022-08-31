@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <!-- ... -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/main.css" rel="stylesheet" />
+  <title>Personal_webpage_final</title>
+</head>
+<body class="bg-gray-800">
+    <!-- =================================== Navbar =================================== -->
+    <nav class="relative bg-white">
+        <div class="container flex items-center justify-between mx-auto p-6 lg:px-16 lg:py-6 xl:px-24 xl:py-6">
+            <!-- Left side -->
+            <div>
+                <a href="index.html" class="pt-2 text-basicGray hover:text-cozyBeige ease-in duration-150 font-semibold text-2xl">HeeWon Son</a>
+            </div> 
+            <!-- Right side -->
+            <div class="hidden md:block flex items-center space-x-6">
+                <a href='index.html' class='font-semibold text-basicGray hover:text-cozyBeige ease-in duration-150'>ABOUT ME</a>
+                <a href='Resume_HeeWon Son_2022_Software Engineering.pdf' class='font-semibold text-basicGray hover:text-cozyBeige ease-in duration-150'>RESUME</a>
+                <a href='project.html' class='text-cozyBeige font-semibold'>PROJECT</a>
+                <a href='life_update.html' class='font-semibold text-basicGray hover:text-cozyBeige ease-in duration-150'>LIFE UPDATE</a>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="Resume_HeeWon Son_2022_Software Engineering.pdf">RESUME</a>
+                <a href="project.html">PROJECT</a>
+                <a href="life_update.html">LIFE UPDATE</a>
+            </div>
+        </div>
+    </nav>
+    
+       <!-- =================================== Projects =================================== -->
+       <section id="projects" class="bg-white">
+        <div class="px-6 pt-16 lg:px-16 xl:px-24 md:mx-auto">
+            <h1 class="text-basicGray text-center text-xl font-bold md:text-2xl">
+                Projects
+            </h1>
+        </div>
+        <!-- Flex container -->
+        <div class="container flex-col md:justify-center px-6 lg:px-16 xl:px-24 mx-auto mt-8 space-y-8 md:space-y-10">
+            <!-- First Row -->
+            <div class="flex flex-col items-baseline pt-8 space-y-8 md:space-y-0 md:space-x-10 md:pb-16 md:flex-row lg:space-x-16 xl:space-x-24">
+                <div class="md:w-1/2 space-y-4">
+                    <a href="project_one.html">
+                        <img src="image/Project_one_main.png" alt="project one" class="hover:opacity-50 ease-in duration-150 pb-4">
+                        <p class="text-basicGray text-center text-xl font-semibold">Total Phosphorus Concentration Prediction</p>
+                    </a>
+                </div>
+                <div class="md:w-1/2 space-y-4">
+                    <a href="project_two.html">
+                        <img src="image/Project_two_main.png" alt="project two" class="hover:opacity-50 ease-in duration-150 pb-4">
+                        <p class="text-basicGray text-center text-xl font-semibold">Climate Change Detection</p>
+                    </a>
+                </div>
+            </div>
+            <!-- Second Row -->
+            <div class="flex flex-col pb-16 space-y-16 md:space-y-0 md:space-x-10 md:flex-row lg:space-x-8 xl:space-x-24">
+                <div class="md:w-1/2 space-y-4">
+                    <a href="project_three.html">
+                        <img src="image/Project_three_main.png" alt="project three" class="hover:opacity-50 ease-in duration-150 pb-4">
+                        <p class="text-basicGray text-center text-xl font-semibold">Earthquake Prediction in Japan</p>
+                    </a>
+                </div> 
+                <div class="hidden md:w-1/2 space-y-4">
+                    <a href="project_four.html">
+                        <img src="image/Project_three_main.png" alt="project three" class="hover:opacity-50 ease-in duration-150 pb-4">
+                        <p class="text-basicGray text-center text-xl font-semibold">Chloropyll-a Concentration Prediction in </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== Footer =================================== -->
+    <footer class="bg-gray-800">
+        <div class="container flex flex-col justify-between px-6 lg:px-16 xl:px-24 py-10 mx-auto space-y-4 md:flex-row md:space-y-0">
+            <!-- Left Side -->
+            <div class="flex space-x-2 items-center">
+                <a href="https://github.com/Watermelonlemon" class="text-gray-300 hover:text-white ease-in duration-150 font-medium text-xl md:text-2xl">Github</a>
+                <a href="https://www.linkedin.com/in/heewonson/" class="text-gray-300 hover:text-white ease-in duration-150 font-medium text-xl md:text-2xl">LinkedIn</a>
+            </div>
+            <!-- Right Side -->
+            <div>
+                <p class="text-gray-300 font-medium text-xl md:text-2xl">HeeWon Son</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- =================================== Javascript =================================== -->
+    <script src="js/script.js"></script>
+</body>
+</html>

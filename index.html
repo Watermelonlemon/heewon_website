@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <!-- ... -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/main.css" rel="stylesheet" />
+  <title>Personal_webpage_final</title>
+</head>
+<body class="bg-gray-800">
+    <!-- =================================== Navbar =================================== -->
+    <nav class="relative bg-white">
+        <div class="container flex items-center mx-auto p-6 lg:px-16 lg:py-6 xl:px-24 xl:py-6 justify-between">
+            <!-- Left side -->
+            <div>
+                <a href="main.html" class="pt-2 text-basicGray hover:text-cozyBeige ease-in duration-150 font-bold text-2xl">HeeWon Son</a>
+            </div> 
+            <!-- Right side -->
+            <div class="hidden md:block flex items-center space-x-6">
+                <a href='main.html' class='text-cozyBeige font-semibold'>ABOUT ME</a>
+                <a href='Resume_HeeWon Son_2022_Software Engineering.pdf' class='font-semibold text-basicGray hover:text-cozyBeige ease-in duration-150'>RESUME</a>
+                <a href='project.html' class='font-semibold text-basicGray hover:text-cozyBeige ease-in duration-150'>PROJECT</a>
+                <a href='life_update.html' class='font-semibold text-basicGray hover:text-cozyBeige ease-in duration-150'>LIFE UPDATE</a>
+            </div>
+            <!-- Button -->
+            <!-- <div>
+                <a href="contact.html" class="hidden p-3 px-6 pt-2 baseline text-white bg-basicGray rounded-full md:block hover:bg-cozyBeige ease-in duration-150">Contact</a>
+            </div> -->
+
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="Resume_HeeWon Son_2022_Software Engineering.pdf">RESUME</a>
+                <a href="project.html">PROJECT</a>
+                <a href="life_update.html">LIFE UPDATE</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- =================================== Intro =================================== -->
+    <section id="info" class="bg-whiteGray">
+        <!-- Felx Container -->
+        <div class="container flex flex-col md:flex-row justify-between items-center mx-auto space-y-0">
+            <!-- Left side -->
+            <div class="flex flex-col space-y-8 py-16 p-6 lg:px-16 xl:px-24 md:w-2/3">
+                <h1 class="text-basicGray text-xl font-bold text-center md:w-max md:text-left md:text-2xl">
+                    Hi,  I'm HeeWon Son
+                </h1>
+                <div class="font-serif text-xl space-y-3 text-basicGray break-normal text-center md:text-left md:w-max">
+                    <p>
+                        I'm a second year Master's student at Stanford University.
+                    </p>
+                    <p>
+                        My focal areas are predicting water quality using machine learning <br>
+                        and tracking source of contaminants in water.
+                    </p>
+                    <p>
+                        Recently, I'm focusing on learning algorithms and utilizing <br>
+                        machine learning in diverse fields outside Environmental Engineering
+                    </p>
+                </div>
+                <!-- <div class="flex justify-center md:justify-start">
+                    <a href="contact.html" class="p-3 px-6 pt-2 baseline text-white bg-basicGray rounded-full hover:bg-cozyBeige ease-in duration-150">
+                    Contact
+                    </a>
+                </div> -->
+            </div>
+            <!-- Right side -->
+            <div class="invisible flex flex-col space-y-6 my-32 md:px-6 lg:px-16 xl:px-24 md:w-1/3">
+                <h1>
+                    My research area is blah blah
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== Recent Projects =================================== -->
+    <section id="recent_projects" class="bg-white">
+        <div class="px-6 pt-16 lg:px-16 xl:px-24 md:mx-auto">
+            <h1 class="text-basicGray text-center text-xl font-bold md:text-2xl">
+                Recent Projects
+            </h1>
+        </div>
+        <!-- Flex container -->
+        <div class="container flex-col md:justify-center px-6 lg:px-16 xl:px-24 mx-auto space-y-10 md:space-y-16">
+            <!-- Left side container -->
+            <div class="flex flex-col items-baseline pt-8 space-y-8 md:space-y-0 md:space-x-10 md:flex-row lg:space-x-16 xl:space-x-24">
+                <div class="md:w-1/2">
+                    <a href="project_one.html">
+                        <img src="image/Project_one_main.png" alt="project one" class="hover:opacity-50 ease-in duration-150 pb-4">
+                        <p class="text-basicGray text-center text-xl font-semibold">Total Phosphorus Concentration Prediction</p>
+                    </a>
+                </div>
+                <div class="md:w-1/2">
+                    <a href="project_one.html">
+                        <img src="image/Project_two_main.png" alt="project two" class="hover:opacity-50 ease-in duration-150 pb-4">
+                        <p class="text-basicGray text-center text-xl font-semibold">Climate Change Detection</p>
+                    </a>
+                </div>
+            </div>
+            <div class="pb-16 text-center">
+                <a href="project.html" class="p-3 px-6 baseline text-white bg-orange-600 rounded-full hover:bg-orange-400 ease-in duration-150">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== Footer =================================== -->
+    <footer class="bg-gray-800">
+        <div class="container flex flex-col justify-between px-6 lg:px-16 xl:px-24 py-10 mx-auto space-y-4 md:flex-row md:space-y-0">
+            <!-- Left Side -->
+            <div class="flex space-x-2 items-center">
+                <a href="https://github.com/Watermelonlemon" class="text-gray-300 hover:text-white ease-in duration-150 font-medium text-xl md:text-2xl">Github</a>
+                <a href="https://www.linkedin.com/in/heewonson/" class="text-gray-300 hover:text-white ease-in duration-150 font-medium text-xl md:text-2xl">LinkedIn</a>
+            </div>
+            <!-- Right Side -->
+            <div>
+                <p class="text-gray-300 font-medium text-xl md:text-2xl">HeeWon Son</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =================================== Javascript =================================== -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
