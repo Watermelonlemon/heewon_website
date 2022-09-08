@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="css/main.css" rel="stylesheet" />
-  <title>HeeWon Son</title>
+  <title>Personal_webpage_final</title>
 </head>
 <body class="bg-gray-800">
     <!-- =================================== Navbar =================================== -->
@@ -44,25 +44,64 @@
     </nav>
     
     <!-- =================================== Intro =================================== -->
-    <section id="info" class="bg-whiteGray">
-        <!-- Felx Container -->
-        <div class="container flex flex-col md:flex-row justify-between items-center mx-auto space-y-0">
+    <section id="info" class="bg-whiteGray space-y-4">
+        <!-- Flex Container -->
+        <div>
+            <h1 class="text-basicGray text-center p-6 pt-16 font-semibold text-xl xl:text-2xl">
+                Total Phosphorus Concentration Prediction in Euiam Lake, South Korea
+            </h1>
+        </div>
+        <div class="container flex flex-col xl:flex-row justify-between items-center mx-auto space-y-0">
             <!-- Left side -->
-            <div class="flex flex-col space-y-8 py-16 p-6 lg:px-16 xl:px-24 md:w-2/3">
-                <h1 class="text-basicGray space-y-5 text-2xl font-bold text-center md:w-max md:text-left md:text-3xl">
-                    Total Phosphorus Concentration Prediction in Euiam Lake, South Korea<br>
-                    Sorry ;( This page is under construction
-                </h1>
-                <div class="pb-16 text-left">
-                    <a href="https://heewon.info/project" class="p-3 px-6 baseline text-white bg-orange-600 rounded-full hover:bg-orange-400 ease-in duration-150">GO BACK TO PROJECT</a>
-                </div>
+            <div class="flex flex-col space-y-8 pb-16 px-6 text-basicGray text-center space-y-4 lg:px-16 xl:px-24 xl:text-left xl:w-1/2 xl:pr-0">
+                <h2 class="font-semibold text-lg">
+                    Study Focus
+                </h2>
+                <p>
+                    This study establishes a framework to prioritize total phosphorus (TP) management strategies based on machine learning (ML).
+                    A comparative analysis is conducted to evaluate the performance of four ML methods: random forest (RF), extreme gradient boosting (XGBoost), deep neural network (DNN), and long short-term memory (LSTM). 
+                    The LSTM-based model is selected as the optimal predictive model of TP concentration in Euiam Lake (E_TP) on seasons (May to October) with high rainfall and inflow from two upstream dams (Chuncheon Dam and Soyanggang Dam). 
+                    We also perform a gradient-based analysis to figure out the most influential factors on E_TP using the LSTM model. 
+                </p>
+                <h2 class="font-semibold text-lg">
+                    Result and Discussion
+                </h2>
+                <p>
+                    The performance of ML models was evaluated through R, CCC, R<sup>2</sup>, MSE, MAE, RMSE, and MAPE.
+                    While all the models satisfied R<sup>2</sup> greater than 0.9, LSTM outperformed other models in validation and test sets.
+                    Interestingly, after dividing the prediction performance of all ML models into three seasons (spring, summer, and autumn), the prediction of spring
+                    was relatively low compared with other seasons, which is assumed to be due to the low amount of water flow in spring.
+                    Among several features trained to predict the concentration of Phosphorus, the factors that affected most were the Phosphorus concentration and suspended solid concentrations from neighboring waterbodies.
+                </p>
+                <h2  class="font-semibold text-lg">
+                    New Hydrological Insights
+                </h2>
+                <p>
+                    This study demonstrates that a robust predictive model can be developed for a serial impoundment system with distinct seasonal characteristics of rainfall, temperature, and water quality, thereby facilitating the selection of management priorities. Based on the predictive model results, we conclude that it is the key for managing the target TP concentration to prioritize the incoming TP concentrations and determine the quantitative<br>
+                </P>
+                <a href="https://doi.org/10.1016/j.ejrh.2022.101069" class="text-purpleBlue hover:text-fallBeige ease-in duration-150 font-semibold text-lg">Get More Information</a>
             </div>
             <!-- Right side -->
-            <div class="invisible flex flex-col space-y-6 my-32 md:px-6 lg:px-16 xl:px-24 md:w-1/3">
-                <h1>
-                    My research area is blah blah
-                </h1>
+            <div class="container flex flex-col my-32 lg:px-6 lg:px-16 xl:px-24 md:w-2/3 lg:w-2/3 xl:w-1/2">
+                <div>
+                    <img src="image/ProjectOne_1.png" class="rounded-t-lg">
+                </div>
+                <div>
+                    <img src="image/ProjectOne_2.png" class="rounded-b-lg">
+                </div>
+                <div class="text-basicGray text-center py-4 space-y-2">
+                    <p class="font-medium">
+                        Comparison of the actual E_TP history and prediction results obtained using four ML models: RF, XGBoost, DNN, and LSTM
+                    </p>
+                    <p>
+                        (left: full period, right: validation and test sets)
+                    </p>
+                </div>
             </div>
+        </div>
+        <!-- Buttons -->
+        <div class="pb-24 text-center">
+            <a href="heewon.info/project" class="p-3 px-6 baseline text-white bg-orange-600 rounded-full hover:bg-orange-400 ease-in duration-150">BACK TO PROJECT</a>
         </div>
     </section>
 
