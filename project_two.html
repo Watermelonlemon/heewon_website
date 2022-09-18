@@ -53,45 +53,41 @@
         </div>
         <div class="container flex flex-row items-center mx-auto space-y-0">
             <!-- Left side -->
-            <div class="flex flex-col space-y-8 pb-16 lg:pb-0 px-6 xl:mr-20 text-basicGray text-center space-y-4 lg:px-16 xl:px-24 xl:text-left lg:w-full xl:pr-0">
-                <div class="flex flex-col xl:flex-row justify-between items-start xl:space-x-10 space-y-8 xl:space-y-0">
-                    <div class="w-full xl:w-3/5 space-y-8">
-                        <div class="space-y-4">
-                            <h2 class="font-semibold text-lg">
-                                Study Focus
-                            </h2>
-                            <p>
-                                Precipitation pattern and assessment of its impact is crucial for water resource management
-                                as well as risk management. Precipitation patterns are often characterized as its seasonality and cyclical features.
-                                However, due to climate change, non-cyclic anomalies are becoming more apparent, and it's important to unmask the impact of climate change.
-                                This study focused on answering whether there is significant change point observed arount 1960s, the period when the climate change is assumed to have been happened.
-                                The precipitation data are extracted from NASA website, using CRU TS 2.0 dataset, which is composed of monthly grids of observed climate with each grid covering the global surface at 0.5° by 0.5°.
-                                Locations were chosen and categorized according to their zonal mean precipitation as shown in Figure 1.
-                            </p>
-                        </div>
-                        <div class="space-y-4">
-                            <h2 class="font-semibold text-lg">
-                                Selected Locations
-                            </h2>
-                            <p>
-                                <b>Wet locations</b>: Quito, Ecuador; Kuala Lumpur, Malaysia; Mogadishu, Somalia (around latitude 0)<br>
-                                <b>Moderate locations</b>: New York, USA; Muscat, Omen; Hanoi, Vietnam; Cape Town, South Africa; Cancun, Mexico; Canberra, Australia (around latitude 0 - 65)<br>
-                                <b>Dry locations</b>: Anchorage, USA; Reykjavik, Iceland; Stockholm, Sweden (around latitude 65)<br>
-                            </p>
-                        </div>
+            <div class="flex flex-col space-y-8 pb-16 lg:pb-0 px-6 xl:mr-20 text-basicGray text-center space-y-4 lg:px-16 xl:px-24 lg:text-left lg:w-full xl:pr-0">
+                <div class="flex flex-col lg:flex-row justify-between items-center items-start lg:space-x-10 space-y-8 lg:space-y-0">
+                    <div class="w-full lg:w-3/5 space-y-4">
+                        <h2 class="font-semibold text-lg">
+                            Study Focus
+                        </h2>
+                        <p>
+                            Precipitation pattern and assessment of its impact is crucial for water resource management
+                            as well as risk management. Precipitation patterns are often characterized as its seasonality and cyclical features.
+                            However, due to climate change, non-cyclic anomalies are becoming more apparent, and it's important to unmask the impact of climate change.
+                            This study focused on answering whether there is significant change point observed arount 1960s, the period when the climate change is assumed to have been happened.
+                            The precipitation data are extracted from NASA website, using CRU TS 2.0 dataset, which is composed of monthly grids of observed climate with each grid covering the global surface at 0.5° by 0.5°.
+                            Locations were chosen and categorized according to their zonal mean precipitation as shown in Figure 1.
+                        </p>
                     </div>
-                    <div class="w-1/2 mx-auto text-center xl:w-2/5">
+                    <div class="w-1/2 mx-auto text-center lg:w-2/5">
                         <img src="image/monthly_zonal_mean_precipitation.png">
                         <a href="https://commons.wikimedia.org/wiki/File:Monthly_zonal_mean_precipitation.png" class="pt-4 text-basicGray hover:text-cozyBeige ease-in duration-150">Figure 1</a>
                     </div>
                 </div>
-                
+                <h2 class="font-semibold text-lg">
+                    Selected Locations
+                </h2>
+                <p>
+                    <b>Wet locations</b>: Quito, Ecuador; Kuala Lumpur, Malaysia; Mogadishu, Somalia (around latitude 0)<br>
+                    <b>Moderate locations</b>: New York, USA; Muscat, Omen; Hanoi, Vietnam; Cape Town, South Africa; Cancun, Mexico; Canberra, Australia (around latitude 0 - 65)<br>
+                    <b>Dry locations</b>: Anchorage, USA; Reykjavik, Iceland; Stockholm, Sweden (around latitude 65)<br>
+                </p>
                 <h2 class="font-semibold text-lg">
                     Method
                 </h2>
                 <p>
                     This project operated 2-sided Mann-Kendall(MK) test for a trend detection and Kolmogorov-Smirnov(KS) test and Cramer von Mises(CvM) test for a change point detection.
-                    We concluded that there is a trend or a change point when p-value under 0.025.
+                    We concluded that there is a trend or a change point when p-value under 0.025 with 90% cofidence interval. 
+                    This project assumes that there might be a climate change impact when change points are detected or trend changes around 1960s.
                 </p>
                 <h2 class="font-semibold text-lg">
                     Result and Discussion
