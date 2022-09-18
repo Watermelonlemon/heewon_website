@@ -36,36 +36,82 @@
         <!-- Mobile Menu -->
         <div class="md:hidden">
             <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="index.html">ABOUT ME</a>
                 <a href="Resume_HeeWon Son_2022_Software Engineering.pdf">RESUME</a>
-                <a href="project.html">PROJECT</a>
                 <a href="life_update.html">LIFE UPDATE</a>
             </div>
         </div>
     </nav>
     
     <!-- =================================== Intro =================================== -->
-    <section id="info" class="bg-whiteGray">
-        <!-- Felx Container -->
-        <div class="container flex flex-col md:flex-row justify-between items-center mx-auto space-y-0">
+    <section id="info" class="bg-whiteGray space-y-4">
+        <!-- Flex Container -->
+        <div>
+            <h1 class="text-basicGray text-center p-6 pt-16 font-semibold text-xl lg:text-2xl">
+                Patterns of Climate Change Impacts on Precipitation Data
+            </h1>
+        </div>
+        <div class="container flex flex-row items-center mx-auto space-y-0">
             <!-- Left side -->
-            <div class="flex flex-col space-y-8 py-16 p-6 lg:px-16 xl:px-24 md:w-2/3">
-                <h1 class="text-basicGray text-2xl font-bold text-center md:w-max md:text-left md:text-3xl">
-                    Climate Change Detection <br>
-                    Sorry ;( This page is under construction
-                </h1>
-                <div class="pb-16 text-left">
-                    <a href="project.html" class="p-3 px-6 baseline text-white bg-orange-600 rounded-full hover:bg-orange-400 ease-in duration-150">GO BACK TO PROJECT</a>
+            <div class="flex flex-col space-y-8 pb-16 lg:pb-0 px-6 xl:mr-20 text-basicGray text-center space-y-4 lg:px-16 xl:px-24 lg:text-left lg:w-full xl:pr-0">
+                <div class="flex flex-col lg:flex-row justify-between items-center items-start lg:space-x-10 space-y-8 lg:space-y-0">
+                    <div class="w-full lg:w-3/5 space-y-4">
+                        <h2 class="font-semibold text-lg">
+                            Study Focus
+                        </h2>
+                        <p>
+                            Precipitation pattern and assessment of its impact is crucial for water resource management
+                            as well as risk management. Precipitation patterns are often characterized as its seasonality and cyclical features.
+                            However, due to climate change, non-cyclic anomalies are becoming more apparent, and it's important to unmask the impact of climate change.
+                            This study focused on answering whether there is significant change point observed arount 1960s, the period when the climate change is assumed to have been happened.
+                            The precipitation data are extracted from NASA website, using CRU TS 2.0 dataset, which is composed of monthly grids of observed climate with each grid covering the global surface at 0.5° by 0.5°.
+                            Locations were chosen and categorized according to their zonal mean precipitation as shown in Figure 1.
+                        </p>
+                    </div>
+                    <div class="w-1/2 mx-auto text-center lg:w-2/5">
+                        <img src="image/monthly_zonal_mean_precipitation.png">
+                        <a href="https://commons.wikimedia.org/wiki/File:Monthly_zonal_mean_precipitation.png" class="pt-4 text-basicGray hover:text-cozyBeige ease-in duration-150">Figure 1</a>
+                    </div>
                 </div>
+                <h2 class="font-semibold text-lg">
+                    Selected Locations
+                </h2>
+                <p>
+                    <b>Wet locations</b>: Quito, Ecuador; Kuala Lumpur, Malaysia; Mogadishu, Somalia (around latitude 0)<br>
+                    <b>Moderate locations</b>: New York, USA; Muscat, Omen; Hanoi, Vietnam; Cape Town, South Africa; Cancun, Mexico; Canberra, Australia (around latitude 0 - 65)<br>
+                    <b>Dry locations</b>: Anchorage, USA; Reykjavik, Iceland; Stockholm, Sweden (around latitude 65)<br>
+                </p>
+                <h2 class="font-semibold text-lg">
+                    Method
+                </h2>
+                <p>
+                    This project operated 2-sided Mann-Kendall(MK) test for a trend detection and Kolmogorov-Smirnov(KS) test and Cramer von Mises(CvM) test for a change point detection.
+                    We concluded that there is a trend or a change point when p-value under 0.025 with 90% cofidence interval. 
+                    This project assumes that there might be a climate change impact when change points are detected or trend changes around 1960s.
+                </p>
+                <h2 class="font-semibold text-lg">
+                    Result and Discussion
+                </h2>
+                <p>
+                    --
+                </p>
+                <h2 class="lg:hidden xl:block font-semibold text-lg">
+                    New Hydrological Insights
+                </h2>
+                <p class="lg:hidden xl:block">
+                    --
+                </P>
+                <a href="https://doi.org/10.1016/j.ejrh.2022.101069" class="text-purpleBlue hover:text-fallBeige ease-in duration-150 font-semibold text-lg">Get More Information</a>
             </div>
-            <!-- Right side -->
-            <div class="invisible flex flex-col space-y-6 my-32 md:px-6 lg:px-16 xl:px-24 md:w-1/3">
-                <h1>
-                    My research area is blah blah
-                </h1>
+            <div>
+                <!-- This space is left blank to divide the section into two columns -->
             </div>
         </div>
+        <!-- Buttons -->
+        <div class="pb-24 text-center">
+            <a href="https://heewon.info/project" class="p-3 px-6 baseline text-white bg-orange-600 rounded-full hover:bg-orange-400 ease-in duration-150">BACK TO PROJECT</a>
+        </div>
     </section>
-
     <!-- =================================== Footer =================================== -->
     <footer class="bg-gray-800">
         <div class="container flex flex-col justify-between px-6 lg:px-16 xl:px-24 py-10 mx-auto space-y-4 md:flex-row md:space-y-0">
