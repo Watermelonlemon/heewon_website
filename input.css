@@ -60,10 +60,9 @@
 
 #tooltipText{
     position: absolute;
-    left: -50%;
+    left: -30%;
     top: 0%;
     transform:  translateX(-50%);
-    background-color: #deb7ab;
     color: #404040;
     padding: 10px 15px;
     border-radius: 7px;
@@ -83,7 +82,7 @@
 }
 */
 #tooltip:hover #tooltipText{
-    top: 130%;
+    top: 70%;
     visibility: visible;
     opacity: 1;
 }
